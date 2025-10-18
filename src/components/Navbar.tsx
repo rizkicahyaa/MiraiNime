@@ -18,8 +18,6 @@ const Navbar = () => {
                     <li className="hover:text-yellow-300 transition-colors cursor-pointer">About</li>
                 </ul>
 
-                <button className="hidden md:inline-block bg-yellow-300 text-purple-800 font-semibold px-4 py-2 rounded-full shadow-md hover:bg-yellow-400 transition-all">Login</button>
-
                 <button className="md:hidden text-white" onClick={() => setOpen(!open)}>
                     {open ? <X size={28} /> : <Menu size={28} />}
                 </button>
@@ -32,7 +30,6 @@ const Navbar = () => {
                         <li className="hover:text-yellow-300 transition-colors cursor-pointer">Recommendations</li>
                         <li className="hover:text-yellow-300 transition-colors cursor-pointer">Genres</li>
                         <li className="hover:text-yellow-300 transition-colors cursor-pointer">About</li>
-                        <button className="bg-yellow-300 text-purple-800 font-semibold px-4 py-2 rounded-full shadow-md hover:bg-yellow-400 transition-all">Login</button>
                     </ul>
                 </div>
             )}
