@@ -24,7 +24,7 @@ const animeList: Anime[] = [
         genre: "Action, Fantasy",
         rating: 8.9,
         description: "Tanjiro berjuang membasmi iblis untuk menyelamatkan adiknya.",
-        image: "/images/demonslayer.jpg",
+        image: "/images/demon-slayer.png",
     },
     {
         id: 3,
@@ -32,7 +32,7 @@ const animeList: Anime[] = [
         genre: "Romance, Fantasy",
         rating: 9.0,
         description: "Dua remaja saling terhubung melalui mimpi lintas ruang dan waktu.",
-        image: "/images/yourname.jpg",
+        image: "/images/your-name.png",
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ const animeList: Anime[] = [
         genre: "Action, Supernatural",
         rating: 8.7,
         description: "Seorang siswa bergabung dengan sekolah sihir untuk melawan kutukan.",
-        image: "/images/jujutsukaisen.jpg",
+        image: "/images/jjk.jpg",
     },
 ];
 
