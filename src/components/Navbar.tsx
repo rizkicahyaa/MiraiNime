@@ -19,7 +19,9 @@ const Navbar = () => {
                     <li className="hover:text-yellow-300 transition-colors cursor-pointer">
                         <Link to="/recommendation">Recommendations</Link>
                     </li>
-                    <li className="hover:text-yellow-300 transition-colors cursor-pointer">Genres</li>
+                    <li className="hover:text-yellow-300 transition-colors cursor-pointer">
+                        <Link to="/genre">Genres</Link>
+                    </li>
                     <li className="hover:text-yellow-300 transition-colors cursor-pointer">About</li>
                 </ul>
 
@@ -37,7 +39,9 @@ const Navbar = () => {
                         <li className="hover:text-yellow-300 transition-colors cursor-pointer">
                             <Link to="/recommendation" onClick={() => setOpen(false)}>Recommendations</Link>
                         </li>
-                        <li className="hover:text-yellow-300 transition-colors cursor-pointer">Genres</li>
+                        <li className="hover:text-yellow-300 transition-colors cursor-pointer">
+                            <Link to="/genre" onClick={() => setOpen(false)}>Genres</Link>
+                        </li>
                         <li className="hover:text-yellow-300 transition-colors cursor-pointer">About</li>
                     </ul>
                 </div>

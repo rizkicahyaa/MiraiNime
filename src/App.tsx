@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TopPicks from "./components/TopPicks";
 import Recommendation from "./pages/Recommendation";
+import Genre from "./pages/Genre";
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 
@@ -19,6 +20,7 @@ function App() {
                         </>
                     } />
                     <Route path="/recommendation" element={<Recommendation />} />
+                    <Route path="/genre" element={<Genre />} />
                 </Routes>
             </main>
             <Footer />
