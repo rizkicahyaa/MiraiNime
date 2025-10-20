@@ -41,22 +41,22 @@ const Recommendation: React.FC = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-white text-gray-800 px-6 lg:px-16 py-16">
-            <div className="text-center mb-10">
-                <h1 className="text-4xl lg:text-5xl font-bold mb-3 text-blue-600">Recommended for You</h1>
-                <p className="text-gray-500 text-lg max-w-2xl mx-auto">Discover anime that match your taste — handpicked just for you!</p>
+        <div className="min-h-screen bg-[#0f0f1b] text-white px-6 lg:px-16 py-20 pt-32">
+            <div className="text-center mb-12">
+                <h1 className="text-4xl lg:text-5xl font-extrabold mb-4 text-yellow-300">Recommended for You</h1>
+                <p className="text-gray-300 text-lg max-w-2xl mx-auto">Discover anime that match your taste — handpicked just for you!</p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 {animeList.map((anime) => (
-                    <div key={anime.id} className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden border border-gray-100">
+                    <div key={anime.id} className="bg-purple-800 rounded-2xl shadow-lg hover:shadow-yellow-300/40 transition-all duration-300 overflow-hidden hover:scale-105">
                         <img src={anime.image} alt={anime.title} className="w-full h-60 object-cover" />
                         <div className="p-5">
-                            <h3 className="text-xl font-semibold mb-2 text-gray-800">{anime.title}</h3>
-                            <p className="text-sm text-gray-500 mb-2">{anime.genre.join(", ")}</p>
+                            <h3 className="text-xl font-bold mb-2 text-yellow-300">{anime.title}</h3>
+                            <p className="text-sm text-gray-300 mb-2">{anime.genre.join(", ")}</p>
                             <div className="flex items-center justify-between">
-                                <span className="text-yellow-500 font-semibold">⭐ {anime.rating}</span>
-                                <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded-lg transition-colors">View Details</button>
+                                <span className="text-yellow-300 font-semibold">⭐ {anime.rating}</span>
+                                <button className="bg-yellow-300 hover:bg-yellow-400 text-purple-800 text-sm px-4 py-2 rounded-lg transition-colors font-semibold">View Details</button>
                             </div>
                         </div>
                     </div>

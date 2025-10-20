@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -7,13 +8,17 @@ const Navbar = () => {
     return (
         <nav className="fixed top-0 left-0 w-full z-50 bg-purple-700 shadow-lg">
             <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-                <div className="text-2xl font-extrabold text-white tracking-wide cursor-pointer select-none">
+                <Link to="/" className="text-2xl font-extrabold text-white tracking-wide cursor-pointer select-none">
                     Mirai<span className="text-yellow-300">Nime</span>
-                </div>
+                </Link>
 
                 <ul className="hidden md:flex space-x-8 text-white font-medium">
-                    <li className="hover:text-yellow-300 transition-colors cursor-pointer">Home</li>
-                    <li className="hover:text-yellow-300 transition-colors cursor-pointer">Recommendations</li>
+                    <li className="hover:text-yellow-300 transition-colors cursor-pointer">
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li className="hover:text-yellow-300 transition-colors cursor-pointer">
+                        <Link to="/recommendation">Recommendations</Link>
+                    </li>
                     <li className="hover:text-yellow-300 transition-colors cursor-pointer">Genres</li>
                     <li className="hover:text-yellow-300 transition-colors cursor-pointer">About</li>
                 </ul>
@@ -26,8 +31,12 @@ const Navbar = () => {
             {open && (
                 <div className="md:hidden bg-purple-700 border-t border-purple-600">
                     <ul className="flex flex-col space-y-4 px-6 py-4 text-white font-medium">
-                        <li className="hover:text-yellow-300 transition-colors cursor-pointer">Home</li>
-                        <li className="hover:text-yellow-300 transition-colors cursor-pointer">Recommendations</li>
+                        <li className="hover:text-yellow-300 transition-colors cursor-pointer">
+                            <Link to="/" onClick={() => setOpen(false)}>Home</Link>
+                        </li>
+                        <li className="hover:text-yellow-300 transition-colors cursor-pointer">
+                            <Link to="/recommendation" onClick={() => setOpen(false)}>Recommendations</Link>
+                        </li>
                         <li className="hover:text-yellow-300 transition-colors cursor-pointer">Genres</li>
                         <li className="hover:text-yellow-300 transition-colors cursor-pointer">About</li>
                     </ul>

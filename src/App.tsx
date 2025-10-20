@@ -10,12 +10,15 @@ function App() {
     return (
         <div className="min-h-screen">
             <Navbar />
-            <Hero />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={
+                    <>
+                        <Hero />
+                        <TopPicks />
+                    </>
+                } />
                 <Route path="/recommendation" element={<Recommendation />} />
             </Routes>
-            <TopPicks />
         </div>
     );
 }
