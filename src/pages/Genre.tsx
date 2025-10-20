@@ -102,8 +102,7 @@ const Genre: React.FC = () => {
                         key={genre.id}
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: index * 0.1 }}
-                        whileHover={{ scale: 1.05 }}
+                        transition={{  delay: index * 0.1 }}
                         className="bg-purple-800 rounded-2xl shadow-lg hover:shadow-yellow-300/40 transition-all duration-300 overflow-hidden cursor-pointer group"
                     >
                         {/* Genre Header with Gradient */}
