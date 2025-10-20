@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import TopPicks from "./components/TopPicks";
 import Recommendation from "./pages/Recommendation";
 import Genre from "./pages/Genre";
+import About from "./pages/About";
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 
@@ -21,6 +22,7 @@ function App() {
                     } />
                     <Route path="/recommendation" element={<Recommendation />} />
                     <Route path="/genre" element={<Genre />} />
+                    <Route path="/about" element={<About />} />
                 </Routes>
             </main>
             <Footer />
